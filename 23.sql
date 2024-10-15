@@ -1,0 +1,10 @@
+SELECT
+  ID AS 'Id',
+  START_DATE AS 'Start Date',
+  END_DATE AS 'End Date',
+  TOTAL AS 'Total',
+  CUSTOMER_ID AS 'Customer Id',
+  CAR_ID AS 'Car Id',
+  EMPLOYEE_ID AS 'Employee Id'
+FROM LOCATIONS
+WHERE START_DATE >= '2022-05-20' AND END_DATE <= '2022-12-25';

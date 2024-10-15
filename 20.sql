@@ -1,0 +1,13 @@
+SELECT
+  L.ID AS 'Id',
+  L.START_DATE AS 'Start Date',
+  L.END_DATE AS 'End Date',
+  L.TOTAL AS 'Total',
+  C.NAME AS 'Customer Name',
+  C.LASTNAME AS 'Customer Lastname',
+  CA.NAME AS 'Car Name',
+  E.NAME AS 'Employee Name'
+FROM LOCATIONS AS L
+JOIN CUSTOMERS AS C ON L.CUSTOMER_ID = C.ID
+JOIN CARS AS CA ON L.CAR_ID = CA.ID
+JOIN EMPLOYEES AS E ON L.EMPLOYEE_ID = E.ID;
